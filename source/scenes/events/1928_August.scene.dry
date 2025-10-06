@@ -1,16 +1,13 @@
-// Test
-
-title: August
-subtitle: it crashed once
+title: Tester
+subtitle: hopefully
 on-arrival: {!
 // see post_event.scene.dry for changes.
-Q.economic_growth +=100;
+Q.economic_growth += 9;
 
 !}
-
 tags: event
-view-if: year = 1929 and month = 2
-priority: 2
+view-if: year = 1928 and month = 11
+priority: 1
 max-visits: 1
 
-OMG it worked!
+A new year begins. The economy appears to be slackening; unemployment is increasing throughout the republic, although for the most part, people are still doing well.
