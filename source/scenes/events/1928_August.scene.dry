@@ -1,7 +1,7 @@
 // Test
 
 title: August
-
+subtitle: it crashed once
 on-arrival: {!
 // see post_event.scene.dry for changes.
 Q.economic_growth +=100;
@@ -9,7 +9,7 @@ Q.economic_growth +=100;
 !}
 
 tags: event
-view-if: year = 1928 and month = 10
+view-if: year = 1929 and month = 2
 priority: 2
 max-visits: 1
 
