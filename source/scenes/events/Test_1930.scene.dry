@@ -1,0 +1,26 @@
+title: Test 1930
+subtitle: we are closer!
+new-page: true
+on-arrival: It_Happened = 1
+tags: event
+view-if: year = 1930 and month = 3
+max-visits: 1
+
+= Testeroony
+
+[+ chancellor +] has called on a test!
+
+Things may not happen however.
+
+- @yes: yippee
+- @no: NOOOOOOO
+
+@yes
+on-arrival: coalition_dissent +=1; z_relation -=4
+
+We say yes but Zentrum hates us
+
+@no
+on-arrival: z_relation +=15
+
+We say no, and catholics love us
