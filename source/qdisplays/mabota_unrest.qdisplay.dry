@@ -1,0 +1,8 @@
+
+(..10) ecstatic
+(10..25) happy
+(25..40) neutral
+(40..55) restless
+(55..70) unhappy
+(70..85) protesting
+(85..) rebelling
