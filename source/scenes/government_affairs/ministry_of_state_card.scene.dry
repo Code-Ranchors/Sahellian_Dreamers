@@ -1,0 +1,32 @@
+title: Ministry of State
+new-page: true
+is-card: true
+on-arrival: ministry_state_timer += 6; month_actions += 1
+view-if: spd_in_government = 1 and ministry_state_timer == 0
+card-image: img/portraits/BaadeFritz.jpg
+tags: govt_affairs, cabinet
+#subtitle: Issues regarding the formation of our constitution
+
+= Ministry of State
+
+We must decide what course our nation will take.
+
+- @nothing
+- @something
+
+@nothing
+title: Nothingness
+subtitle: fake -1 budget
+choose-if: budget >= 1
+on-arrival: budget += 2;
+
+Nothing is money?
+
+
+@something
+title: Mayhaps
+subtitle: I am not sure
+choose if: budget >= 2
+on-arrival: budget -= 2;
+
+Wrong choice
