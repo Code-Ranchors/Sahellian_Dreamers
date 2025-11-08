@@ -1,0 +1,13 @@
+title: The French Have Finished Their Withdrawal!
+subtitle: We have succeeded!
+on-arrival: Q_fr_nationals -= 20000
+view-if: year = 1960 and month = 4
+max-visits: 1
+tags: event
+new-page: true
+
+The French colonisers have completed their promised withdrawal from our lands, while Sahellian nationalists and pro-independence activists across the world celebrate the last French troops withdrawing the pillage of our lands and exodus of skilled French settlers will be difficult to recover from. 
+  
+The difficult task of managing the fragile newly independent Sahellia now lies with the soon to be revealed 'First Independence Government', a government which will greatly affect the course Sahellia makes.
+
+A tripartisan meeting will take place to hash out the details and cabinet appointments of the First Independence Government.
