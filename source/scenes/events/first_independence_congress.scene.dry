@@ -1,0 +1,59 @@
+title: The First Independence Congress Takes Place
+subtitle: It is time to plot the course of Sahella
+new-page: true
+on-arrival: congress_seen = 1; nef_influence = 55; aff_influence = 20; ps_influence = 15; others_influence = 10
+tags: event
+view-if: year = 1960 and month = 5
+max-visits: 1
+
+= First Independence Congress
+
+With meticoulous planning various representatives from across the Sahellan political spectrum have arrived for the First Independence Congress. There is palpable excitement and nervousness amongst the delegates gathered as to who will be appointed to which ministries. Especially important at the congress are the three largest political parties, the National Emancipation Front, Alliance for Freedom and Popular Stability however there are also a range of important cultural, intellectual and financial figures not tied to any of the parties. 
+
+- @continuation
+
+@continuation
+title: Be Careful
+subtitle: Especially careful...
+go-to: parties_details
+
+Importance should be placed on ensuring that no one party is completely sidelined. Which would you like to know more about?
+
+@parties_details
+
+- @nef_details
+- @aff_details
+- @ps_details
+
+@nef_details
+title: National Emancipation Front
+subtitle: The Revolutionaires
+max-visits: 1
+on-arrival: nef_details_seen = 1
+go-to: parties_details
+
+The National Emancipation Front or NEF was the revolutionary force which began the war for Sahellan independence. While it enjoys large support amongst the public and boasts impressive influence at the congress the NEF is only broadly unified by an anti-colonial and anti-french ideology, while such a broad appeal proved succesful in the guerilla fight against France, the NEF is struggling to continue to accomodate both the likes of International Socialists and Agrarian Nationalists within the one party.
+
+Its support base is primarily found in the rural and remote regions of Sahella and is primarily made up of poor and rural ethnic Banwadi. It is largely due to reliance of Banwadi support for NEF militias that has shifted the party to a more hostile stance against Mabota, with extrajudicial killings, theft and intimidation common in NEF dominated areas.
+
+@aff_details
+title: Alliance for Freedom
+subtitle: The Christians
+max-visits: 1
+on-arrival: aff_details_seen = 1
+go-to: parties_details
+
+The Alliance for Freedom or AfF was founded soon after the Defferre Law. Initially pro-french the AfF sought a gradual independence from France and won nearly all seats for the colonial "Sahellan Assembly of Delegates". When the war for Sahellan independence began the party was initially opposed, believing that armed resistance would only delay independence. Pressure from the AfF's "Gandhian" youth wing would move the party away from supporting the colonial government as state repression and control increased. Ultimately after the arrest and torture of an AfF priest by colonial authorities was uncovered the AfF would move to oppose the colonial government. In a Gandhi-esque move all members of the AfF would resign their posts in government and the military as a protest and with much of the public service and government ministers gone what little legitamacy the colonial administration had evaporated.
+
+As a result of its time in government the AfF boasts an experienced cadre of leaders. The AfF draws its support from the urban middle classes, part of the intelligencia, Christians of all denominations and also has a significant presence in rural areas, more around farmers than the rural poor.
+
+@ps_details
+title: Popular Stability
+subtitle: The Moderates
+max-visits: 1
+on-arrival: ps_details_seen = 1
+go-to: parties_details
+
+Popular Stability or PS was formed as a splinter off of the AfF in opposition to the AfF's declaration of support for imediate Sahellan independence. In the war for Sahellan independence it was members of Popular Stability, utilising their connections with the French government and international circles to open up backchannel peace discussions, which culminated in the signing of the Venice Accords. Despite significant dislike of PS by the leaders of the NEF the AfF was able to secure PS's entry into the congress.
+
+PS draws its support from two broad groups, the first are the old middle class, industrialists and other wealthy individuals, a significant number also being French settlers. The second group are the Mabota, encouraged by PS's talk of Federalism. However the two populations which support PS are far from aligned, however the catastrophic consequences of splitting now has dissuaded both sides from instigating such an action for now.
