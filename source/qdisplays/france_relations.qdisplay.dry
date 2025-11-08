@@ -1,0 +1,8 @@
+
+(..0) hostile
+(1..1) frosty
+(2..2) nuetral
+(3..3) amicable
+(4..4) friendly
+(5..5) very friendly
+(6..) allied
