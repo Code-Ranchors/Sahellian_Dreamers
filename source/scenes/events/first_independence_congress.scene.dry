@@ -1,5 +1,5 @@
 title: The First Independence Congress Takes Place
-subtitle: It is time to plot the course of Sahella
+subtitle: it is time to plot the course of Sahella
 new-page: true
 on-arrival: congress_seen = 1; nef_influence = 55; aff_influence = 20; ps_influence = 15; others_influence = 10
 tags: event
@@ -14,7 +14,7 @@ With meticoulous planning various representatives from across the Sahellan polit
 
 @continuation
 title: Be Careful
-subtitle: Especially careful...
+subtitle: especially careful...
 go-to: parties_details
 
 Importance should be placed on ensuring that no one party is completely sidelined. Which would you like to know more about?
@@ -26,13 +26,13 @@ Importance should be placed on ensuring that no one party is completely sideline
 - @ps_details
 
 @nef_details
-title: National Emancipation Front
+title: <span style="color: #2c6e0f;">National</span> <span style="color: #6e480f;">Emancipation</span> <span style="color: #c23a63;">Front</span>
 subtitle: The Revolutionaires
 max-visits: 1
 on-arrival: nef_details_seen = 1
 go-to: parties_details
 
-The National Emancipation Front or NEF was the revolutionary force which began the war for Sahellan independence. While it enjoys large support amongst the public and boasts impressive influence at the congress the NEF is only broadly unified by an anti-colonial and anti-french ideology, while such a broad appeal proved succesful in the guerilla fight against France, the NEF is struggling to continue to accomodate both the likes of International Socialists and Agrarian Nationalists within the one party.
+The <span style="color: #2c6e0f;">National</span> <span style="color: #6e480f;">Emancipation</span> <span style="color: #c23a63;">Front</span> or <span style="color: #2c6e0f;">N</span><span style="color: #6e480f;">E</span><span style="color: #c23a63;">F</span> was the revolutionary force which began the war for Sahellan independence. While it enjoys large support amongst the public and boasts impressive influence at the congress the NEF is only broadly unified by an anti-colonial and anti-french ideology, while such a broad appeal proved succesful in the guerilla fight against France, the NEF is struggling to continue to accomodate both the likes of International Socialists and Agrarian Nationalists within the one party.
 
 Its support base is primarily found in the rural and remote regions of Sahella and is primarily made up of poor and rural ethnic Banwadi. It is largely due to reliance of Banwadi support for NEF militias that has shifted the party to a more hostile stance against Mabota, with extrajudicial killings, theft and intimidation common in NEF dominated areas.
 
