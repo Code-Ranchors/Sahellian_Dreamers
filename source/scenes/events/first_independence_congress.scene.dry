@@ -64,6 +64,7 @@ title: The Congress Begins
 subtitle: potential ministers present themselves
 view-if: ps_details_seen = 1 and affps_details_seen = 1 and nefps_details_seen = 1
 max-visits: 1
+go-to: list_econ_candidates
 
 = The nominees for Minister for the Economy are...
 
@@ -78,6 +79,8 @@ The third is Peter Njume, a member of the NEF's Marxist wing who has proposed a 
 The forth is Georges Iswana, also a member of the NEF however part of the Agrarian wing Iswana pushes for a "managed capitalism" which assists rural and regional farmers by guaranteing a stable price to sell their food at, which according to Iswana will reduce the urban-rural divide and drive more equal economic growth. Iswana also places a greater emphasis on trade between fellow African countries than the other contendors. 
 
 The question then lies with you, Monsiuer President, who will you appoint?
+
+@list_econ_candidates
 
 - @appoint_biya
 - @appoint_daouda
