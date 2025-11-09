@@ -64,6 +64,7 @@ title: The Congress Begins
 subtitle: potential ministers present themselves
 view-if: ps_details_seen = 1 and aff_details_seen = 1 and nef_details_seen = 1
 max-visits: 1
+go-to: list_econ_candidates
 
 = The nominees for Minister for the Economy are...
 
@@ -80,6 +81,7 @@ The forth is Georges Iswana, also a member of the NEF however part of the Agrari
 The question then lies with you, Monsiuer President, who will you appoint?
 
 @list_econ_candidates
+max-visits: 1
 
 - @appoint_biya
 - @appoint_daouda
