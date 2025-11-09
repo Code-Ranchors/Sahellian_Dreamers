@@ -24,10 +24,11 @@ Importance should be placed on ensuring that no one party is completely sideline
 - @nef_details
 - @aff_details
 - @ps_details
+- @skip_that
 
 @nef_details
 title: <span style="color: #2c6e0f;">National</span> <span style="color: #6e480f;">Emancipation</span> <span style="color: #c23a63;">Front</span>
-subtitle: The Revolutionaires
+subtitle: the revolutionaires
 max-visits: 1
 on-arrival: nef_details_seen = 1
 go-to: parties_details
@@ -38,7 +39,7 @@ Its support base is primarily found in the rural and remote regions of Sahella a
 
 @aff_details
 title: Alliance for Freedom
-subtitle: The Christians
+subtitle: the christians
 max-visits: 1
 on-arrival: aff_details_seen = 1
 go-to: parties_details
@@ -49,7 +50,7 @@ As a result of its time in government the AfF boasts an experienced cadre of lea
 
 @ps_details
 title: Popular Stability
-subtitle: The Moderates
+subtitle: the moderates
 max-visits: 1
 on-arrival: ps_details_seen = 1
 go-to: parties_details
@@ -57,3 +58,56 @@ go-to: parties_details
 Popular Stability or PS was formed as a splinter off of the AfF in opposition to the AfF's declaration of support for imediate Sahellan independence. In the war for Sahellan independence it was members of Popular Stability, utilising their connections with the French government and international circles to open up backchannel peace discussions, which culminated in the signing of the Venice Accords. Despite significant dislike of PS by the leaders of the NEF the AfF was able to secure PS's entry into the congress.
 
 PS draws its support from two broad groups, the first are the old middle class, industrialists and other wealthy individuals, a significant number also being French settlers. The second group are the Mabota, encouraged by PS's talk of Federalism. However the two populations which support PS are far from aligned, however the catastrophic consequences of splitting now has dissuaded both sides from instigating such an action for now.
+
+@skip_that
+title: The Congress Begins
+subtitle: potential ministers present themselves
+view-if: ps_details_seen = 1 and affps_details_seen = 1 and nefps_details_seen = 1
+max-visits: 1
+
+= The nominees for Minister for the Economy are...
+
+The Ministry for the Economy is responsible for both expenditure and revenue of the Sahellan government, it also plays a significant role in economic and trade policy. Amongst the delegates gathered there have been over ten nominations for Minister for the Economy, but after a prelimenary round four nominees are the clear contendors.
+
+The first is Jean Biya, a member of PS who's central argument and pitch is the renogotiation of trade treaties with France and the forging of new trade ties with the United States. Biya is also an advocate for the extensive modernisation of the Agricultural sector to free up labour and provide food to support his proposed industrialisation plans.
+
+The second is John Daouda, a member of the AfF who advocates for greater trade with the whole world. Daouda advocates for tax cuts and land redistrobution to the rural poor, Daouda intends to afford his policies via the state aquiring many now derelict properties and businesses of recently fled French nationals and selling them to native Sahellans.
+
+The third is Peter Njume, a member of the NEF's Marxist wing who has proposed a sweeping plan for state ownership over the economy, and intensive industrialisation efforts similar to the "Great Leap Forward" taking place in the PRC under Mao Zedong.
+
+The forth is Georges Iswana, also a member of the NEF however part of the Agrarian wing Iswana pushes for a "managed capitalism" which assists rural and regional farmers by guaranteing a stable price to sell their food at, which according to Iswana will reduce the urban-rural divide and drive more equal economic growth. Iswana also places a greater emphasis on trade between fellow African countries than the other contendors. 
+
+The question then lies with you, Monsiuer President, who will you appoint?
+
+- @appoint_biya
+- @appoint_daouda
+- @appoint_njume
+- @appoint_iswana
+
+@appoint_biya
+title: Appoint Jean Biya
+subtitle: PS will be happy
+on-arrival: econ_minister = 1; biya_economics = 1;
+
+With the selection of Jean Biya as Minister for the Economy Popular Stability and business leaders feel more engaged in the creation of policy for the First Independence Government.
+
+@appoint_daouda
+title: Appoint John Daouda
+subtitle: the AfF are ecstatic
+on-arrival: econ_minister = 1; daouda_economics = 1;
+
+With the appointment of John Daouda a definitive signal is sent to the rural poor and the French government, that Sahella stands willing and prepared to retake for Sahellans what the imperialist colonisers stole from them in the first place.
+
+@appoint_njume
+title: Appoint Peter Njume
+subtitle: the AfF and PS won't be happy...
+on-arrival: econ_minister = 1; njume_economics = 1;
+
+The appointment of Peter Njume has caused an uproar at the Congress, but ultimately he takes his spot. Potential investors have already been spooked off by the announcement however the news is welcomed by the Soviet and Chinese governments, which signal a willingness to give the Sahellan government support in their socialist transformation.
+
+@appoint_iswana
+title: Appoint Georges Iswana
+subtitle: PS will be unhappy
+on-arrival: econ_minister = 1; iswana_economics = 1;
+
+With Georges Iswana now appointed as Minister for the Economy the difficult work of his plan can begin.
