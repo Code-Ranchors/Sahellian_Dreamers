@@ -62,7 +62,7 @@ PS draws its support from two broad groups, the first are the old middle class, 
 @skip_that
 title: The Congress Begins
 subtitle: potential ministers present themselves
-view-if: ps_details_seen = 1 and afps_details_seen = 1 and nefps_details_seen = 1
+view-if: ps_details_seen = 1 and aff_details_seen = 1 and nef_details_seen = 1
 max-visits: 1
 
 = The nominees for Minister for the Economy are...
