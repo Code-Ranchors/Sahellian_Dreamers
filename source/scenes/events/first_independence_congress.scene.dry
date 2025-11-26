@@ -173,3 +173,9 @@ on-arrival: foreign_minister = 1; sheya_fm = 1; american_relations += 1;
 go-to: defence_discussions
 
 The appointment of Anto Sheya as Foreign Minister will be met apathetically by the two superpowers, however the United States does approve of the continuation and stability within our Foreign Service.
+
+@defence_discussions
+
+= The Nominees for Minister of Defence are...
+
+Just a bunch of generals innit.
