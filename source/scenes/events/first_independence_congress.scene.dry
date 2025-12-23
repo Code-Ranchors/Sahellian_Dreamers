@@ -176,6 +176,7 @@ go-to: defence_discussions
 The appointment of Anto Sheya as Foreign Minister will be met apathetically by the two superpowers, however the United States does approve of the continuation and stability within our Foreign Service.
 
 @defence_discussions
+go-to: list_defence_candidates
 
 = The Nominees for Minister of Defence are...
 
