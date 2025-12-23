@@ -199,9 +199,9 @@ on-arrival: defence_minister = 1; skip_defence = 1; american_relations += 1; uss
 go-to: concluded_congress
 
 @smth
-title: Skip for now
-subtitle: I'm lazy
-on-arrival: defence_minister = 1; skip_defence = 1; american_relations += 1; ussr_relations -= 1;
+title: Something?
+subtitle: nothing...
+on-arrival: defence_minister = 1; smth_defence = 1; american_relations -= 1; ussr_relations -= 1;
 go-to: concluded_congress
 
 @concluded_congress
