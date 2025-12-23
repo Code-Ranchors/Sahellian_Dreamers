@@ -178,4 +178,29 @@ The appointment of Anto Sheya as Foreign Minister will be met apathetically by t
 
 = The Nominees for Minister of Defence are...
 
-Just a bunch of generals innit.
+Just a bunch of generals innit. Basically there are two armies, one is the more leftwing and revolutionary National Independence Army while the other is the Sahellan Protection Forces, who have soldiers and Generals which fought with the previous colonial government
+
+Person one is an independent and wants to keep a balance between the two armies
+
+Person two is a PS and wants to give the army to the SPF
+
+Person three is a NEF and wants to give the army to the NIA
+
+Person four is a AfF and wants to make army controlled by civilians
+
+@list_defence_candidates
+max-visits: 1
+
+- @skipfornow
+
+@skipfornow
+title: Skip for now
+subtitle: I'm lazy
+on-arrival: defence_minister = 1; skip_defence = 1; american_relations += 1; ussr_relations -= 1;
+go-to: concluded_congress
+
+@concluded_congress
+
+= And With That The Congress Has Been Concluded
+
+Nice bit of alliteration innit? Minor ministirial appointments will take place 6 months from now.
