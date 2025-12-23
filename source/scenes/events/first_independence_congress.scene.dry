@@ -121,7 +121,7 @@ go-to: fm_discussions
 With Georges Iswana now appointed as Minister for the Economy the difficult work of his plan can begin.
 
 @fm_discussions
-go-tp: list_fm_candidates
+go-to: list_fm_candidates
 
 = The candidates under discussion for Foreign Minister present themselves
 
