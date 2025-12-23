@@ -116,7 +116,7 @@ The appointment of Peter Njume has caused an uproar at the Congress, but ultimat
 title: Appoint Georges Iswana
 subtitle: PS will be unhappy
 on-arrival: econ_minister = 1; iswana_economics = 1;
-go-to: fm_discussions
+go-to: list_fm_candidates
 
 With Georges Iswana now appointed as Minister for the Economy the difficult work of his plan can begin.
 
