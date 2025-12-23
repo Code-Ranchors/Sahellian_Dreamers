@@ -189,11 +189,6 @@ Person three is a NEF and wants to give the army to the NIA
 
 Person four is a AfF and wants to make army controlled by civilians
 
-go-to: list_defence_candidates
-
-@list_defence_candidates
-max-visits: 1
-
 - @skipfornow
 - @smth
 
