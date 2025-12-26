@@ -338,15 +338,14 @@ Q.economic_records = [];
 //Basically Sahella produces food, barely enough to sustain itself, but it has corruption and other issues, as a result hunger arises.
 
 //Food consumption of various classes (all per year):
-/Unemployed = 500 kg
-/Worker = 800 kg
-/Rural = 700 kg
-/Lower Middle Class = 1100 kg
-/Upper Middle Class = 1350 kg
+//Unemployed = 500 kg
+//Worker = 800 kg
+//Rural = 700 kg
+//Lower Middle Class = 1100 kg
+//Upper Middle Class = 1350 kg
 
 Q.food_production = 59950
-
-Q.food_demand = ((Q.population*(Q.unemployed/100)*500) + (Q.population*(Q.rural/100)*700) + (Q.population*(Q.workers/100)*800) + (Q.population*(Q.new_middle/100)*1100) + (Q.population*(Q.old_middle/100)*1350))/1000000
+Q.food_demand = (((Q.population*(Q.unemployed/100)*500) + (Q.population*(Q.rural/100)*700) + (Q.population*(Q.workers/100)*800) + (Q.population*(Q.new_middle/100)*1100) + (Q.population*(Q.old_middle/100)*1350))/1000000)
 
 
 // State of the government
