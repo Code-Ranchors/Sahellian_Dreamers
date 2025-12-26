@@ -195,7 +195,8 @@ Q.coup_progress = 0;
 Q.capital_strike_progress = 0;
 
 Q.budget = 4;
-
+// The population of Sahella in 1960
+Q.population = 68200000
 // Proportion of different social groups
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
 Q.workers = 15; // industry and trade
@@ -331,6 +332,21 @@ Q.election_records = [];
 Q.party_support_records = [];
 // inflation and unemployment records
 Q.economic_records = [];
+
+/////////////////// Hunger Mechanic (everything in million kg/year) /////////////////////////////////////
+
+//Basically Sahella produces food, barely enough to sustain itself, but it has corruption and other issues, as a result hunger arises.
+
+//Food consumption of various classes (all per year):
+/Unemployed = 500 kg
+/Worker = 800 kg
+/Rural = 700 kg
+/Lower Middle Class = 1100 kg
+/Upper Middle Class = 1350 kg
+
+Q.food_production = 59950
+
+Q.food_demand = ((Q.population*(Q.unemployed/100)*500) + (Q.population*(Q.rural/100)*700) + (Q.population*(Q.workers/100)*800) + (Q.population*(Q.new_middle/100)*1100) + (Q.population*(Q.old_middle/100)*1350))/1000000
 
 
 // State of the government
