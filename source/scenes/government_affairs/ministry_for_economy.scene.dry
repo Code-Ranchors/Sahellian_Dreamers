@@ -92,6 +92,10 @@ on-arrival: corporate_tax_lower += 1; corporate_tax_raise -= 1; corporate_tax_in
 
 Lowering corporation taxes may please businesses and lead to an increase in their activity, however most of the profits are going to the French government, the effects will be seen in next years budget report.
 
+@fund_unemployment_program
+subtitle: Welfare for the unemployed
+on-arrival: unemployment_program_funded = 1; unemployment_program_cost += 3
+
 @mechanise_agriculture
 subtitle: Placeholder
 view-if: biya_economics = 1
