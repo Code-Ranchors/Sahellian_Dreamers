@@ -14,8 +14,6 @@ tags: govt_affairs, cabinet
 Beyond enacting [+ minister_for_economy +]'s plan the ministry for the Economy can also make policy decisions pertaining to taxes on the poor, middle class, wealthy and corporations. As well as managing the funding of various welfare and other programs.
 
 
-@policy_menu
-
 - @raise_poor_tax
 - @lower_poor_tax
 - @raise_middle_tax
