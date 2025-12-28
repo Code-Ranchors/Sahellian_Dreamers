@@ -91,7 +91,7 @@ max-visits: 1
 @appoint_biya
 title: Appoint Jean Biya
 subtitle: PS will be happy
-on-arrival: econ_minister = 1; biya_economics = 1;
+on-arrival: econ_minister = 1; biya_economics = 1; minister_for_economy = "Jean Biya"
 go-to: fm_discussions
 
 With the selection of Jean Biya as Minister for the Economy Popular Stability and business leaders feel more engaged in the creation of policy for the First Independence Government.
@@ -99,7 +99,7 @@ With the selection of Jean Biya as Minister for the Economy Popular Stability an
 @appoint_daouda
 title: Appoint John Daouda
 subtitle: the AfF are ecstatic
-on-arrival: econ_minister = 1; daouda_economics = 1;
+on-arrival: econ_minister = 1; daouda_economics = 1; minister_for_economy = "John Daouda"
 go-to: fm_discussions
 
 With the appointment of John Daouda a definitive signal is sent to the rural poor and the French government, that Sahella stands willing and prepared to retake for Sahellans what the imperialist colonisers stole from them in the first place.
@@ -107,7 +107,7 @@ With the appointment of John Daouda a definitive signal is sent to the rural poo
 @appoint_njume
 title: Appoint Peter Njume
 subtitle: the AfF and PS won't be happy...
-on-arrival: econ_minister = 1; njume_economics = 1;
+on-arrival: econ_minister = 1; njume_economics = 1; minister_for_economy = "Peter Njume"
 go-to: fm_discussions
 
 The appointment of Peter Njume has caused an uproar at the Congress, but ultimately he takes his spot. Potential investors have already been spooked off by the announcement however the news is welcomed by the Soviet and Chinese governments, which signal a willingness to give the Sahellan government support in their socialist transformation.
@@ -115,7 +115,7 @@ The appointment of Peter Njume has caused an uproar at the Congress, but ultimat
 @appoint_iswana
 title: Appoint Georges Iswana
 subtitle: PS will be unhappy
-on-arrival: econ_minister = 1; iswana_economics = 1;
+on-arrival: econ_minister = 1; iswana_economics = 1; minister_for_economy = "Georges Iswana"
 go-to: fm_discussions
 
 With Georges Iswana now appointed as Minister for the Economy the difficult work of his plan can begin.
