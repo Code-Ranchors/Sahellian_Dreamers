@@ -21,13 +21,14 @@ Beyond enacting [+ minister_for_economy +]'s plan the ministry for the Economy c
 - @lower_middle_tax
 - @raise_rich_tax
 - @lower_rich_tax
-- @raise_corporate_tax: Increase the tax burden which corporations pay.
-- @cut_corporate_tax: Reduce the tax burden which corporations pay.
+- @raise_corporate_tax
+- @cut_corporate_tax
 - @fund_unemployment_program
-- @mechanise_agriculture: Begin to mechanise Sahellan agriculture.
-- @incentivise_industrialisation: By using incentive Biya can increase Sahella's industrialisation.
+- @mechanise_agriculture
+- @incentivise_industrialisation
 
 @raise_poor_tax
+title: Increase taxes on the poor.
 subtitle: The NEF will feel betrayed...
 choose-if: poor_tax_raise <= 5
 unavailable-subtitle: The poor have no more to give.
@@ -36,6 +37,7 @@ on-arrival: poor_tax_raise += 1; poor_tax_lower -= 1; poor_tax_income += 2; nef_
 While raising taxes on the poorest may raise the most revenue it also results in a decline in economic activity, and reduces the governments legitamacy in the eyes of the working poor.
 
 @lower_poor_tax
+title: Lower taxes on the poor.
 subtitle: The NEF is satisfied...
 choose-if: poor_tax_lower <= 5
 unavailable-subtitle: The poor already pay no tax.
@@ -44,6 +46,7 @@ on-arrival: poor_tax_raise -= 1; poor_tax_lower += 1; poor_tax_income -= 2; nef_
 Reducing taxes on the poorest Sahellan means a significant loss in revenue, however the extra money in pockets not only increases economic activity but also apporval of the current government.
 
 @raise_middle_tax
+title: Increase taxes on the middle class.
 subtitle: The NEF will feel betrayed...
 choose-if: middle_tax_raise <= 5
 unavailable-subtitle: There is not middle class.
@@ -52,6 +55,7 @@ on-arrival: middle_tax_raise += 1; middle_tax_lower -= 1; middle_tax_income += 1
 Smth
 
 @lower_middle_tax
+title: Lower taxes on the middle class.
 subtitle: The NEF is satisfied...
 choose-if: middle_tax_lower <= 5
 unavailable-subtitle: The 'middle class' are wealthy now.
@@ -60,6 +64,7 @@ on-arrival: middle_tax_raise -= 1; middle_tax_lower += 1; middle_tax_income -= 1
 Description
 
 @raise_rich_tax
+title: Increase taxes on the wealthy.
 subtitle: The NEF will feel betrayed...
 choose-if: rich_tax_raise <= 5
 unavailable-subtitle: There are no more rich people.
@@ -68,6 +73,7 @@ on-arrival: rich_tax_raise += 1; rich_tax_lower -= 1; rich_tax_income += 2; nef_
 smtg
 
 @lower_rich_tax
+title: Lower taxes on the wealthy.
 subtitle: The NEF is satisfied...
 choose-if: rich_tax_lower <= 5
 unavailable-subtitle: The government is giving money to the rich.
@@ -76,6 +82,7 @@ on-arrival: rich_tax_raise -= 1; rich_tax_lower += 1; rich_tax_income -= 2; nef_
 stg
 
 @raise_corporate_tax
+title: Increase the taxes corporation pay.
 subtitle: The NEF will view this with distrust...
 choose-if: corporate_tax_raise <= 5
 unavailable-subtitle: No company exists.
@@ -84,6 +91,7 @@ on-arrival: corporate_tax_lower -= 1; corporate_tax_raise += 1; corporate_tax_in
 stg
 
 @cut_corporate_tax
+title: Decrease the taxes corporations pay.
 subtitle: The NEF will view this with distrust...
 view-if: biya_economics = 1
 choose-if: corporate_tax_lower <= 5
@@ -93,10 +101,12 @@ on-arrival: corporate_tax_lower += 1; corporate_tax_raise -= 1; corporate_tax_in
 Lowering corporation taxes may please businesses and lead to an increase in their activity, however most of the profits are going to the French government, the effects will be seen in next years budget report.
 
 @fund_unemployment_program
-subtitle: Welfare for the unemployed
+title: [? if unemployment_program_funded = 1: Continue to fund the unemployment benefits program?] Create an unemployment benefits program.
+subtitle: Welfare for the unemployed.
 on-arrival: unemployment_program_funded = 1; unemployment_program_cost += 3
 
 @mechanise_agriculture
+Title: Mechanise that AG.
 subtitle: Placeholder
 view-if: biya_economics = 1
 choose-if: mechanisation_points <=5
@@ -106,6 +116,7 @@ on-arrival: budget -= 1; mechanisation_points += 1; food_production *= 1.03
 Biya's plan involves the purchasing of foreign farming equipment to quickly mechanise large scale farms.
 
 @incentivise_industrialisation
+title: Incetivise industrialisation.
 subtitle: good luck twin
 choose-if: industrialisation_points <= 100
 unavailable-subtitle: Sahella is already industrialised.
