@@ -4,6 +4,7 @@ is-card: true
 on-arrival: economic_policy_timer += 6; month_actions +=1
 view-if: econ_minister = 1 and economic_policy_timer == 0
 card-image: img/portraits/HilferdingRudolf.jpg
+tags: govt_affairs, cabinet
 # this card is relevant to the various economic plans of possible ministers
 
 = Enacting [+ minister_for_economy +]'s Plan
@@ -106,7 +107,7 @@ subtitle: Welfare for the unemployed.
 on-arrival: unemployment_program_funded = 1; unemployment_program_cost += 3
 
 @mechanise_agriculture
-Title: Mechanise that AG.
+title: Mechanise that AG.
 subtitle: Placeholder
 view-if: biya_economics = 1
 choose-if: mechanisation_points <=5
