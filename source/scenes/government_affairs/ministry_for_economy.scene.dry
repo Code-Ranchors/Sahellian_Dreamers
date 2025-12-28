@@ -1,0 +1,110 @@
+title: Ministry for the Economy
+new-page: true
+is-card: true
+on-arrival: economic_policy_timer += 6; month_actions +=1
+view-if: econ_minister = 1 and economic_policy_timer == 0
+card-image: img/portraits/HilferdingRudolf.jpg
+# this card is relevant to the various economic plans of possible ministers
+
+= Enacting [+ minister_for_economy +]'s Plan
+
+[? if biya_economics = 1: Jean Biya's economic plan relies on three major prongs, the first being the mechanisation of Sahellan agriculture, the second being the creation of a pro-business environment and also the incentivisation of major industrialisation through the creation of 'speacial tax zones' or STZ's which should atract investment from foreign powers. ?][? if daouda_economics = 1: John Daouda's economic plan requires the cooperation of a swathe of various government departments, however with control of the Ministry for the Economy he can enact his proposed aquisition of derelict French businesses and lands as well as reduce the tax burdan of small farmers to increase the economic development of Sahella more evenly.?][? if njume_economics = 1: Peter Njume's ascension to the Economic Ministry means that he can enact his plan to both industrialise and socialise the economy.?][? if iswana_economics = 1: For Georges Iswana's economic plan of 'managed capitalism' to be fully realised control of the agricultural ministry will be necessary, in the meantime Iswana can implement a variety of pro-rural decisions.?]
+
+Beyond enacting [+ minister_for_economy +]'s plan the ministry for the Economy can also make policy decisions pertaining to taxes on the poor, middle class, wealthy and corporations. As well as managing the funding of various welfare and other programs.
+
+
+@policy_menu
+
+- @raise_poor_tax
+- @lower_poor_tax
+- @raise_middle_tax
+- @lower_middle_tax
+- @raise_rich_tax
+- @lower_rich_tax
+- @raise_corporate_tax: Increase the tax burden which corporations pay.
+- @cut_corporate_tax: Reduce the tax burden which corporations pay.
+- @fund_unemployment_program
+- @mechanise_agriculture: Begin to mechanise Sahellan agriculture.
+- @incentivise_industrialisation: By using incentive Biya can increase Sahella's industrialisation.
+
+@raise_poor_tax
+subtitle: The NEF will feel betrayed...
+choose-if: poor_tax_raise <= 5
+unavailable-subtitle: The poor have no more to give.
+on-arrival: poor_tax_raise += 1; poor_tax_lower -= 1; poor_tax_income += 2; nef_dissent += 20; economic_slowdown_points += 1
+
+While raising taxes on the poorest may raise the most revenue it also results in a decline in economic activity, and reduces the governments legitamacy in the eyes of the working poor.
+
+@lower_poor_tax
+subtitle: The NEF is satisfied...
+choose-if: poor_tax_lower <= 5
+unavailable-subtitle: The poor already pay no tax.
+on-arrival: poor_tax_raise -= 1; poor_tax_lower += 1; poor_tax_income -= 2; nef_dissent -= 10
+
+Reducing taxes on the poorest Sahellan means a significant loss in revenue, however the extra money in pockets not only increases economic activity but also apporval of the current government.
+
+@raise_middle_tax
+subtitle: The NEF will feel betrayed...
+choose-if: middle_tax_raise <= 5
+unavailable-subtitle: There is not middle class.
+on-arrival: middle_tax_raise += 1; middle_tax_lower -= 1; middle_tax_income += 1; nef_dissent -= 5; economic_slowdown_points += 1 if middle_tax_raise >= 2
+
+Smth
+
+@lower_middle_tax
+subtitle: The NEF is satisfied...
+choose-if: middle_tax_lower <= 5
+unavailable-subtitle: The 'middle class' are wealthy now.
+on-arrival: middle_tax_raise -= 1; middle_tax_lower += 1; middle_tax_income -= 1; nef_dissent += 5
+
+Description
+
+@raise_rich_tax
+subtitle: The NEF will feel betrayed...
+choose-if: rich_tax_raise <= 5
+unavailable-subtitle: There are no more rich people.
+on-arrival: rich_tax_raise += 1; rich_tax_lower -= 1; rich_tax_income += 2; nef_dissent -= 15; capital_strike += 1
+
+smtg
+
+@lower_rich_tax
+subtitle: The NEF is satisfied...
+choose-if: rich_tax_lower <= 5
+unavailable-subtitle: The government is giving money to the rich.
+on-arrival: rich_tax_raise -= 1; rich_tax_lower += 1; rich_tax_income -= 2; nef_dissent += 10; capital_strike -= 1 if rich_tax_lower >= 2
+
+stg
+
+@raise_corporate_tax
+subtitle: The NEF will view this with distrust...
+choose-if: corporate_tax_raise <= 5
+unavailable-subtitle: No company exists.
+on-arrival: corporate_tax_lower -= 1; corporate_tax_raise += 1; corporate_tax_income += 1; nef_dissent -= 15;
+
+stg
+
+@cut_corporate_tax
+subtitle: The NEF will view this with distrust...
+view-if: biya_economics = 1
+choose-if: corporate_tax_lower <= 5
+unavailable-subtitle: We are already a tax haven.
+on-arrival: corporate_tax_lower += 1; corporate_tax_raise -= 1; corporate_tax_income -= 1; nef_dissent += 15;
+
+Lowering corporation taxes may please businesses and lead to an increase in their activity, however most of the profits are going to the French government, the effects will be seen in next years budget report.
+
+@mechanise_agriculture
+subtitle: Placeholder
+view-if: biya_economics = 1
+choose-if: mechanisation_points <=5
+unavailable-subtitle: Agriculture is already mechanised.
+on-arrival: budget -= 1; mechanisation_points += 1; food_production *= 1.03
+
+Biya's plan involves the purchasing of foreign farming equipment to quickly mechanise large scale farms.
+
+@incentivise_industrialisation
+subtitle: good luck twin
+choose-if: industrialisation_points <= 100
+unavailable-subtitle: Sahella is already industrialised.
+on-arrival: budget -=2; industrialisation_points += 3; inflation += 0.3
+
+Via a combination of tax free zones and speacial deals with multinationals Biya encourages companies to set up production in Sahella.
