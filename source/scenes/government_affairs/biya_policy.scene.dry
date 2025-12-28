@@ -2,7 +2,7 @@ title: Ministry of Economy
 new-page: true
 is-card: true
 on-arrival: economic_policy_timer += 6; month_actions +=1
-view-if: spd_in_government = 1 and economic_policy_timer = 0
+view-if: spd_in_government = 1 and biya_economics = 1 and economic_policy_timer == 0
 card-image: img/portraits/HilferdingRudolf.jpg
 # this card is relevant to Biya as economy minister
 
