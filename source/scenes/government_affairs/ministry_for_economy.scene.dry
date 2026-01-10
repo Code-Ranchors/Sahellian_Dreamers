@@ -23,7 +23,7 @@ Beyond enacting [+ minister_for_economy +]'s plan the ministry for the Economy c
 - @raise_corporate_tax
 - @cut_corporate_tax
 - @fund_unemployment_program
-- @mechanise_agriculture
+- @relax_regulations
 - @implement_stzs
 
 @raise_poor_tax
@@ -104,13 +104,14 @@ title: [? if unemployment_program_funded = 1: Continue to fund the unemployment 
 subtitle: Welfare for the unemployed.
 on-arrival: unemployment_program_funded = 1; unemployment_program_cost += 3
 
-@mechanise_agriculture
-title: Mechanise that AG.
-subtitle: Placeholder
+@relax_regulations
+title: Relax regulations.
+subtitle: Businesses will be encouraged
 view-if: biya_economics == 1
-choose-if: mechanisation_points <=5
-unavailable-subtitle: Agriculture is already mechanised.
-on-arrival: budget -= 1; mechanisation_points += 1; food_production *= 1.03
+choose-if: deregulation_points <=5
+unavailable-subtitle: There are no more regulations left.
+on-arrival: deregulation_points += 1
+#TODO should reduce worker aproval and increase NEF dissent.
 
 Biya's plan involves the purchasing of foreign farming equipment to quickly mechanise large scale farms.
 
