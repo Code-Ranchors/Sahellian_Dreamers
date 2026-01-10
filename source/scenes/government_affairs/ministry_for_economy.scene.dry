@@ -25,6 +25,9 @@ Beyond enacting [+ minister_for_economy +]'s plan the ministry for the Economy c
 - @fund_unemployment_program
 - @relax_regulations
 - @implement_stzs
+- @sell_no_comp
+- @sell_with_comp
+- @build_rural_infra
 
 @raise_poor_tax
 title: Increase taxes on the poor.
@@ -124,3 +127,38 @@ unavailable-subtitle: Sahella is already industrialised.
 on-arrival: budget -=2; industrialisation_points += 3; inflation += 0.3
 
 Via a combination of tax free zones and speacial deals with multinationals Biya encourages companies to set up production in Sahella.
+
+@sell_no_comp
+title: Sell abandoned French businesses to native Sahellans without compensation.
+subtitle: This will anger the French government and emigres.
+view-if: daouda_economics == 1
+choose-if: available_property >= 0
+unavailable-subtitle: All abandoned businesses have been sold.
+on-arrival: budget += 1; fr_relations -= 1; available_property -= 1
+#TODO reduce growth and increase in PS dissent.
+
+@sell_with_comp
+title: Purchase abandoned French businesses then sell to native Sahellans.
+subtitle: The French are unlikely to sell their businesses at a discount.
+view-if: daouda_economics == 1
+choose-if: available_property >= 0
+unavailable-subtitle: All abandoned businesses have been sold.
+on-arrival: budget -= 1; available_property -= 1
+#TODO increase growth, old middle approval but increases NEF dissent.
+
+@build_rural_infra
+title: Build rural infrastructure
+subtitle: Expanding road access to move goods more easily.
+view-if: daouda_ecoonomics == 1
+choose-if: rural_infra_points <= 30
+unavailable-subtitle: Rural infrastructure is better than city infrastructure.
+on-arrival: budget -= 3; rural_infra_points += 3; industrialisation_points += 2
+#TODO increase growth, lower NEF and AfF dissent, more food.
+
+@choice
+title: title
+subtitle: subtitle
+view-if:
+choose-if:
+unavailable-subtitle:
+on-arrival:
