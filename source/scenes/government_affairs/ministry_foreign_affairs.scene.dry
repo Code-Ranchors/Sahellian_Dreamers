@@ -1,0 +1,116 @@
+title: Ministry of Foreign Affairs
+new-page: true
+is-card: true
+on-arrival: foreign_policy_timer += 6; month_actions += 1
+view-if: spd_in_government and fm_minister == 1 and foreign_policy_timer == 0
+card-image: img/portraits/HilferdingRudolf.jpg
+tags: govt_affaird; cabinet
+#this card relates to various foreign policy actions which Sahella can take, TODO is African Union, sanctions, emargo and other reactive actions to player choice.
+
+= The Foreign Policy of Sahella
+
+Sahella stands in a unique geopolitical situation, as one of the larger African nations the positions and actions we make will make a key difference not just in the African region, but in deciding the fate of the Cold War. There are numerous actions we can take however the foreign and domestic implications of aligning more closely with any given bloc or country should be thoroughly considered to make the best choice for our young nation.
+
+- @improve_usa_relations
+- @improve_ussr_relations
+- @improve_fr_relations
+- @improve_east_african_relations
+- @imrpove_central_african_relations
+- @sign_trade_deal_usa
+- @sign_trade_deal_fr
+- @sign_trade_deal_ussr
+- @sign_trade_deal_east_africa
+- @sign_trade_deal_central_africa
+- @align_usa
+- @align_ussr
+- @align_fr
+- @align_africa
+- @condemn_sa_apartheid
+
+@improve_usa_relations
+title: Improve relations with the United States.
+subtitle: This will move us closer to the western bloc.
+on-arrival: american_relations += 1
+
+@improve_ussr_relations
+title: Improve relations with the USSR.
+subtitle: This will move us closer to the eastern bloc.
+on-arrival: ussr_relations += 1
+
+@improve_fr_relations
+title: Improve relations with France.
+subtitle: This may be detrimental domestically.
+on-arrival: france_relations += 1
+
+@improve_east_african_relations
+title: Improve relations with our east african neighbours.
+subtitle: plhldr
+on-arrival: east_african_relations += 1
+
+@improve_central_african_relations
+title: Improve relations with our central african neighbours.
+subtitle: plhldr
+on-arrival: central_african_relations += 1
+
+@sign_trade_deal_usa
+title: Sign a comprehensive trade agreement with the United States.
+subtitle: This will further intertwine our nations economies.
+choose-if: american_relations >= 5
+unavailable-subtitle: Our relations are too poor with the US to sign an agreement with them at this time.
+on-arrival: us_trade_agreement = 1; american_relations += 1
+#TODO increase yearly budget from trade
+
+@sign_trade_deal_ussr
+title: Sign a comprehensive trade agreement with the USSR.
+subtitle: This will further intertwine our nations economies.
+choose-if: ussr_relations >= 5
+unavailable-subtitle: Our relations are too poor with the USSR to sign an agreement with them at this time.
+on-arrival: ussr_trade_agreement = 1; ussr_relations += 1
+#TODO increase yearly budget from trade
+
+@sign_trade_deal_fr
+title: Sign a comprehensive trade agreement with France.
+subtitle: We will return to the old trading system...
+choose-if: france_relations >= 5
+unavailable-subtitle: Our relations are too poor with the French government to sign a trade agreement with them.
+on-arrival: fr_trade_agreement = 1; french_relations += 1
+#TODO make dependent on low nationalism?
+
+@sign_trade_deal_east_africa
+title: Sign a comprehensive trade agreement with our east african neighours.
+subtitle: This will increase our pan african cooperation.
+choose-if: east_african_relations >= 5
+unavailable-subtitle: We lack the relations to sign a comprehensive agreement encompassing most of east africa.
+on-arrival: east_african_trade_agreement = 1; east_african_relations += 1
+
+@sign_trade_deal_central_africa
+title: Sign a comprehensive trade agreement with our central african neighbours.
+subtitle: This will increase our pan african cooperation.
+choose-if: central_african_relations >= 5
+unavailable-subtitle: We lack the relations to sign a comprehensive agreement ecompassing most of central africa.
+on-arrival: central_african_trade_agreement = 1; central_african_relations += 1
+
+@align_usa
+title:
+subtitle:
+on-arrival:
+
+@align_ussr
+title:
+subtitle:
+on-arrival:
+
+@align_fr
+title:
+subtitle:
+on-arrival:
+
+@align_africa
+title:
+subtitle:
+on-arrival:
+
+@condemn_sa_apartheid
+title:
+subtitle:
+on-arrival: month_actions += 1
