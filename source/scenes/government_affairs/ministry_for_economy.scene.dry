@@ -31,6 +31,7 @@ Beyond enacting [+ minister_for_economy +]'s plan the ministry for the Economy c
 - @sieze_fr_businesses
 - @industrialise_sahella
 - @socialise_industry
+- @enforce_regulations
 
 @raise_poor_tax
 title: Increase taxes on the poor.
@@ -112,7 +113,7 @@ on-arrival: unemployment_program_funded = 1; unemployment_program_cost += 3
 
 @relax_regulations
 title: Relax regulations.
-subtitle: Businesses will be encouraged
+subtitle: Businesses will be encouraged.
 view-if: biya_economics == 1
 choose-if: deregulation_points <=5
 unavailable-subtitle: There are no more regulations left.
@@ -185,10 +186,11 @@ unavailable-subtitle: Sahellan industry is already socialised.
 on-arrival: budget -= 2; socialisation points += 5
 #TODO increase soviet relations, decrease usa and fr relations, increase capital strike and increase PS dissent.
 
-@choice
-title: title
-subtitle: subtitle
-view-if:
-choose-if:
-unavailable-subtitle:
-on-arrival:
+@enforce_regulations
+title: Enforce Sahellan regulations.
+subtitle: Business activity will decrease.
+view-if: iswana_economics == 1
+choose-if: regulations_enforced <= 3
+unavailable-subtitle: Regulations are fully enforced.
+on-arrival: regulations_enforced += 1
+#TODO reduce growth, more unemployment, more inflation, balanced with greater worker and lower middle approval.
