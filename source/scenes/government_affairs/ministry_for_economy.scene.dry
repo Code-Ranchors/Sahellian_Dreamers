@@ -174,7 +174,7 @@ subtitle: subtitle
 view-if: njume_economics == 1
 choose-if: industrialisation_points <= 100
 unavailable-subtitle: Sahella is already industrialised.
-on-arrival: budget -= 3; industrialisation points += 5
+on-arrival: budget -= 3; industrialisation_points += 5
 #TODO reduce number of rural workers, increase growth and inflation, lower urban unemployment.
 
 @socialise_industry
