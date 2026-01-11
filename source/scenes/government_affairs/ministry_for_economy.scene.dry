@@ -183,7 +183,7 @@ subtitle: Increase state control over the industrial sector.
 view-if: njume_economics == 1
 choose-if: industry_socialisation_points <= 35
 unavailable-subtitle: Sahellan industry is already socialised.
-on-arrival: budget -= 2; socialisation points += 5
+on-arrival: budget -= 2; socialisation_points += 5
 #TODO increase soviet relations, decrease usa and fr relations, increase capital strike and increase PS dissent.
 
 @enforce_regulations
