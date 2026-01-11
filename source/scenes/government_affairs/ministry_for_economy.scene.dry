@@ -28,6 +28,9 @@ Beyond enacting [+ minister_for_economy +]'s plan the ministry for the Economy c
 - @sell_no_comp
 - @sell_with_comp
 - @build_rural_infra
+- @sieze_fr_businesses
+- @industrialise_sahella
+- @socialise_industry
 
 @raise_poor_tax
 title: Increase taxes on the poor.
@@ -147,13 +150,40 @@ on-arrival: budget -= 1; available_property -= 1
 #TODO increase growth, old middle approval but increases NEF dissent.
 
 @build_rural_infra
-title: Build rural infrastructure
+title: Build rural infrastructure.
 subtitle: Expanding road access to move goods more easily.
 view-if: daouda_ecoonomics == 1
 choose-if: rural_infra_points <= 30
 unavailable-subtitle: Rural infrastructure is better than city infrastructure.
 on-arrival: budget -= 3; rural_infra_points += 3; industrialisation_points += 2
 #TODO increase growth, lower NEF and AfF dissent, more food.
+
+@seize_fr_businesses
+title: Forcefully seize French businesses.
+subtitle: This may irreperably harm our relations with France
+view-if: njume_economics == 1 or iswana_economics == 1
+choose-if: available_property >= 0
+unavailable-subtitle: There are no more businesses to seize
+on-arrival: budget += 1; available_property -= 1
+#TODO harm french and usa relations, increase PS dissent, increase NEF militancy and nationalism?
+
+@industrialise_sahella
+title: Industrialise Sahella.
+subtitle: subtitle
+view-if: njume_economics == 1
+choose-if: industrialisation_points <= 100
+unavailable-subtitle: Sahella is already industrialised.
+on-arrival: budget -= 3; industrialisation points += 5
+#TODO reduce number of rural workers, increase growth and inflation, lower urban unemployment.
+
+@socialise_industry
+title: Socialise Sahellan industry.
+subtitle: Increase state control over the industrial sector.
+view-if: njume_economics == 1
+choose-if: industry_socialisation_points <= 35
+unavailable-subtitle: Sahellan industry is already socialised.
+on-arrival: budget -= 2; socialisation points += 5
+#TODO increase soviet relations, decrease usa and fr relations, increase capital strike and increase PS dissent.
 
 @choice
 title: title
