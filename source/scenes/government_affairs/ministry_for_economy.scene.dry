@@ -1,7 +1,7 @@
 title: Ministry for the Economy
 new-page: true
 is-card: true
-on-arrival: economic_policy_timer += 6; month_actions +=1
+on-arrival: economic_policy_timer += 6; month_actions += 1
 view-if: spd_in_government and econ_minister == 1 and economic_policy_timer == 0
 card-image: img/portraits/HilferdingRudolf.jpg
 tags: govt_affairs, cabinet
