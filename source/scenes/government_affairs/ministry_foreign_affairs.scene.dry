@@ -4,7 +4,7 @@ is-card: true
 on-arrival: foreign_policy_timer += 6; month_actions += 1
 view-if: spd_in_government and fm_minister == 1 and foreign_policy_timer == 0
 card-image: img/portraits/HilferdingRudolf.jpg
-tags: govt_affaird; cabinet
+tags: govt_affaird, cabinet
 #this card relates to various foreign policy actions which Sahella can take, TODO is African Union, sanctions, emargo and other reactive actions to player choice.
 
 = The Foreign Policy of Sahella
