@@ -91,26 +91,34 @@ unavailable-subtitle: We lack the relations to sign a comprehensive agreement ec
 on-arrival: central_african_trade_agreement = 1; central_african_relations += 1
 
 @align_usa
-title:
-subtitle:
-on-arrival:
+title: Sign a comprehensive security deal with the United States.
+subtitle: This will permanantly align us with the western bloc!
+choose-if: american_relations >= 10 and us_trade_agreement = 1
+unavailable-subtitle: We need to be closer to join the western bloc.
+on-arrival: us_aligned = 1
 
 @align_ussr
-title:
-subtitle:
-on-arrival:
+title: Sign a comprehensive security deal with the USSR.
+subtitle: This will permanantly align us with the eastern bloc!
+choose-if: ussr_relations >= 10 and ussr_trade_agreement = 1
+unavailable-subtitle: We need to be closer to join the eastern bloc.
+on-arrival: ussr_aligned = 1
 
 @align_fr
-title:
-subtitle:
-on-arrival:
+title: Sign a comprehensive security deal with France.
+subtitle: We will return to colonial subservience...
+choose-if: france_relations >= 10 and fr_trade_agreement = 1
+unavailable-subtitle: We need to be closer to join the French Community.
+on-arrival: fr_aligned = 1
 
 @align_africa
-title:
-subtitle:
-on-arrival:
+title: Sign a joint security pact with our east and central african neighbours.
+subtitle: We will firmly align ourselves with our neighbours.
+choose-if: east_african_relations >= 10 and east_african_trade_agreement = 1 and central_african_relations >= 10 and central_african_trade_agreement = 1
+unavailable-subtitle: We need to be closer to sign this pact.
+on-arrival: africa_aligned = 1
 
 @condemn_sa_apartheid
-title:
-subtitle:
+title: Condemn South African apartheid.
+subtitle: This will slightly increase pressure on the SA government.
 on-arrival: month_actions += 1
